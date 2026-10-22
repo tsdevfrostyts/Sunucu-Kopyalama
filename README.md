@@ -20,6 +20,20 @@ Token uygulama tarafından diske veya işlem günlüğüne yazılmaz. Önizleme,
 
 Forum oluşturma Discord’un hedef sunucudaki özellik ve API kısıtlarına bağlıdır; uygulama bunları aşmaz.
 
+## VirusTotal ve Windows uyarıları neden görülebilir?
+
+Uygulama Python ile yazılır ve PyInstaller kullanılarak tek EXE olarak paketlenir. Açılışta gerekli Python/Tcl/Tk kitaplıkları, temalar ve fontlar Windows'un geçici klasöründeki `_MEI*` dizinine açılır; `python314.dll` uygulama sürecine yüklenir. Bu gerçek paketleme davranışı, genel “PE dosyası oluşturma” ve “Python olmayan süreçte Python yükleme” kurallarıyla eşleşebilir. `obfuscated` etiketi tek başına özel bir kod gizleme yöntemi kullanıldığını kanıtlamaz; bu projede ek obfuscator veya UPX kullanılmıyor. Gereksiz toplu paketleme kaldırıldı; 43 ham Python ve 7 paket metadata dosyası artık çalışma sırasında açılmıyor.
+
+Kaynak incelemesinde uygulamanın kök sertifika eklediği, otomatik başlatma kurduğu veya geliştiriciye bilgi gönderdiği bir kod yolu bulunmadı. Eski sandbox raporundaki sertifika deposu uyarısının kesin süreç ve kayıt yolu erişilebilen özetten doğrulanamadı. Bu yüzden bu uyarıyı kesin olarak “yanlış alarm” diye kapatmıyoruz. Python'un işletim sistemi sürümü sorgusu da bazı ortamlarda `cmd /c ver` komutuna düşebilir; bu uygulamanın uzaktan komut aldığı anlamına gelmez.
+
+**Antivirüs tespiti, dijital imza güveni ve SmartScreen itibarı ayrı değerlendirmelerdir.** Mevcut EXE kendinden imzalıdır; sertifikası bağımsız, Windows'un güvendiği bir otorite tarafından onaylanmamıştır. Bu nedenle “yayıncı doğrulanamadı” veya güvenilmeyen kök uyarısı görülebilir. Zaman damgası yayıncı kimliğini onaylamaz. Kullanıcı sayısının artması bu sertifikayı otomatik olarak güvenilir yapmaz. SmartScreen'in dosya/yayıncı itibarı zamanla değişebilir; belirli bir kullanıcı sayısında veya birkaç hafta içinde onay garantisi yoktur. [Microsoft'un açıklaması](https://learn.microsoft.com/en-us/windows/apps/package-and-deploy/smartscreen-reputation).
+
+Bir tarama sonucu uygulamanın bütünü için güvenlik garantisi değildir; açık kaynak olması veya imza bulunması da tek başına yeterli değildir. Kaynak kodunu ve [bu sürümdeki EXE'nin VirusTotal sonucunu](https://www.virustotal.com/gui/file/b9c54eead0fea243b368639011d29ff5e5dbafe5241ce958bf526e023d947737/detection) birlikte değerlendirebilirsiniz. Uyarıları gidermek için Windows/antivirüs korumalarını kapatmanız veya kök sertifika yüklemeniz istenmez.
+
+22 Ekim 2026 tarihinde bu sürümün son EXE taraması **4/70** tespit bildirdi: Bkav Pro, Elastic, Microsoft (`Trojan:Win32/Wacatac.C!ml`) ve SecureAge. Aynı dosyanın yerel Defender taramasında tehdit bulunmadı; motor, bulut ve tanım farklılıkları nedeniyle sonuçlar değişebilir. Bu farklılık dört tespitin yanlış olduğunu kanıtlamaz. VirusTotal ayrıntılarındaki `invalid-signature` etiketinin açıklaması, imza zincirinin güvenilmeyen bir kökte sonlanmasıdır; mevcut kendinden imzalı sertifika için beklenen güven sınırlamasıdır.
+
+Paketleme davranışı için: [PyInstaller'ın tek dosya çalışma açıklaması](https://pyinstaller.org/en/stable/operating-mode.html#how-the-one-file-program-works).
+
 ## Kullanım
 
 1. EXE dosyasını açın. Python kurulumu gerekmez.
