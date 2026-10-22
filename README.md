@@ -51,7 +51,7 @@ Kaynaktan açmak için:
 
 ## Doğrulama
 
-v1.0.0 için 43 otomatik test (31 çekirdek/aktarım, 12 arayüz) ve üretilen EXE’nin arayüz öz denetimi geçti. Ağ testleri taklit yanıtlarla çalışır. Önceki çalışan çekirdeğin gerçek kopyalama işlemini kullanıcı doğruladı; bu sürümdeki görsel değişiklikler sonrasında tüm canlı Discord senaryoları ayrıca denenmedi. EXE dijital olarak imzalanmamıştır. İndirilen dosyanın SHA256 özeti sürümdeki `SHA256SUMS.txt` ile karşılaştırılabilir.
+v1.0.0 için 43 otomatik test (31 çekirdek/aktarım, 12 arayüz) ve üretilen EXE’nin arayüz öz denetimi geçti. Ağ testleri taklit yanıtlarla çalışır. Önceki çalışan çekirdeğin gerçek kopyalama işlemini kullanıcı doğruladı; bu sürümdeki görsel değişiklikler sonrasında tüm canlı Discord senaryoları ayrıca denenmedi. EXE dijital olarak imzalanmamıştır.
 
 ## Lisans
 

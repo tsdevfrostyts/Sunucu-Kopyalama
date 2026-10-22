@@ -15,4 +15,4 @@ $exe = Join-Path $PSScriptRoot 'dist\Sunucu-Kopyalama_v1.0.0.exe'
 $report = Join-Path $PSScriptRoot 'build\release-self-check.json'
 $process = Start-Process -FilePath $exe -ArgumentList @('--self-check', '--report', $report) -WindowStyle Hidden -Wait -PassThru
 if ($process.ExitCode -ne 0) { throw 'Paketlenmiş uygulama kontrolü başarısız.' }
-Get-FileHash -LiteralPath $exe -Algorithm SHA256
+Write-Output "Hazır: $exe"
