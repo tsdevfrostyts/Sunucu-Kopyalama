@@ -1,36 +1,3 @@
-Sunucu Kopyalama - Kapalı Kaynak Kullanım Lisansı
-v1.0.1 ve sonraki yeni dağıtımlar
-
-Copyright (c) 2026 DevFrosty (tsdevfrostyts). Tüm hakları saklıdır.
-
-Uygulamanın derlenmiş sürümünü indirmenize, kendi cihazınıza kurmanıza ve
-kendi hesabınızla, yönetmeye yetkili olduğunuz sunucularda kullanmanıza
-ücretsiz, kişisel ve devredilemez izin verilir. Kullanım izni yazılımın
-mülkiyetini veya kaynak kodu üzerinde hak devretmez.
-
-Hak sahibinin yazılı izni olmadan bu lisansa tabi özgün yeni kodun veya
-ikili dağıtımın değiştirilmesine, yeniden dağıtılmasına, satılmasına,
-alt lisanslanmasına veya başka bir ürüne dahil edilmesine izin verilmez.
-Uygulanabilir hukukun izin verdiği veya emrettiği istisnalar saklıdır.
-
-ÖNCEKİ MIT HAKLARI: v1.0.0 ile veya başka şekilde önceden MIT lisansıyla
-sunulmuş kod ve kopyalar için verilmiş haklar geri alınmaz. Bu metin,
-o kod üzerinde önceden edinilmiş MIT haklarını sınırlandırmaz. Yeni
-kodun kapalı kaynak olması, daha önce yayımlanmış kodu gizli hale getirmez.
-Aşağıdaki tarihsel MIT metni bu önceki kod/kopyalar için korunmuştur.
-
-ÜÇÜNCÜ TARAFLAR: Bağımsız bileşenler kendi lisanslarına tabidir.
-THIRD_PARTY_NOTICES.md dosyasındaki izinler, telif bildirimleri ve lisanslar
-bu lisansla kısıtlanmaz. Bu lisans yalnızca hak sahibinin lisanslama
-yetkisine sahip olduğu özgün yeni materyale uygulanır.
-
-Yazılım olduğu gibi, garanti olmaksızın sunulur. Kanunun izin verdiği
-ölçüde hak sahibi kullanım, veri kaybı veya kesintiden doğan zararlardan
-sorumlu tutulamaz. Kanal silme işlemleri mesaj kaybına yol açabilir;
-yerel yapı kaydı mesaj kurtarma veya otomatik geri yükleme sağlamaz.
-
---- Tarihsel MIT lisansı: v1.0.0 ve önceden MIT ile sunulmuş kod ---
-
 MIT License
 
 Copyright (c) 2026 DevFrosty (tsdevfrostyts)

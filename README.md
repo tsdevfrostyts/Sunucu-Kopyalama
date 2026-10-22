@@ -1,6 +1,6 @@
 # Sunucu Kopyalama
 
-Windows için animasyonlu Discord sunucu yapısı kopyalama uygulaması.
+Windows için açık kaynak, animasyonlu Discord sunucu yapısı kopyalama uygulaması.
 
 **[v1.0.1 EXE indir](https://github.com/tsdevfrostyts/Sunucu-Kopyalama/releases/download/v1.0.1/Sunucu-Kopyalama_v1.0.1.exe)** · [Tüm sürümler](https://github.com/tsdevfrostyts/Sunucu-Kopyalama/releases)
 
@@ -33,8 +33,28 @@ Yapı yedekleri `%LOCALAPPDATA%\SunucuKopyalayici\backups` altında tutulur; ara
 
 Kullanıcı hesabı otomasyonu Discord kurallarına aykırı olabilir ve hesabınızın kısıtlanmasına yol açabilir. Yalnızca kendi hesabınızla ve yönetmeye yetkili olduğunuz sunucularda kullanın. Token’inizi kimseyle paylaşmayın.
 
+## Kaynaktan çalıştırma ve EXE oluşturma
+
+Windows 10/11 x64, Python 3.14 ve PowerShell ile:
+
+```powershell
+.\build.ps1
+```
+
+Bu komut sanal ortamı/bağımlılıkları hazırlar, testleri çalıştırır, `dist/Sunucu-Kopyalama_v1.0.1.exe` üretir ve paketlenmiş arayüzün öz denetimini çalıştırır. Derleme bağımlılıklarının kurulumu paket kayıt sistemlerine bağlanır; bu, son kullanıcının EXE çalışma akışından ayrıdır.
+
+Kaynaktan açmak için:
+
+```powershell
+.\.venv\Scripts\python.exe app.py
+```
+
+## Doğrulama
+
+v1.0.1 için 43 otomatik test (31 çekirdek/aktarım, 12 arayüz) ve üretilen EXE’nin arayüz öz denetimi geçti. Ağ testleri taklit yanıtlarla çalışır. Önceki çalışan çekirdeğin gerçek kopyalama işlemini kullanıcı doğruladı; bu sürümdeki görsel değişiklikler sonrasında tüm canlı Discord senaryoları ayrıca denenmedi.
+
 ## Lisans
 
-v1.0.1 ve sonraki yeni dağıtımlar [kapalı kaynak kullanım lisansına](LICENSE) tabidir. Uygulamayı ücretsiz indirip kullanabilirsiniz; uygulamanın mülkiyeti veya yeni kaynak kodu üzerinde hak devri yapılmaz. Önceden MIT lisansıyla yayımlanmış v1.0.0 kodu ve kopyaları için verilmiş haklar korunur; yeni lisans bunları geriye dönük kısıtlamaz.
+[MIT](LICENSE). CustomTkinter arayüzü/simgesi ve diğer bileşenlerin lisansları [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) dosyasındadır. Discord ile bağlantılı veya Discord tarafından onaylanmış bir ürün değildir.
 
-Bu depo yeni sürümlerin indirme ve lisans bilgileri içindir; yeni uygulama kaynak kodu yayımlanmaz. Önceden yayımlanmış Git geçmişi ve v1.0.0 etiketi korunur. CustomTkinter arayüzü/simgesi ve diğer bileşenler kendi lisanslarına tabidir; metinleri [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) dosyasındadır. Discord ile bağlantılı veya Discord tarafından onaylanmış bir ürün değildir.
+Derleme notu: gereksiz toplu paket dosyaları kaldırılmıştır; gerekli font/tema ve çalışma zamanı standart PyInstaller hook’larıyla eklenir. UPX kullanılmaz. Dosya ve ürün sürümü 1.0.1.0, dil Türkçe (Türkiye) olarak doldurulur. Antivirüs motorlarının tümü için temiz sonuç garantisi verilmez.
