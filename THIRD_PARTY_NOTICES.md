@@ -1903,10 +1903,9 @@ LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
 OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
 PERFORMANCE OF THIS SOFTWARE.
 
+## Tcl 9.0
 
-## Tcl 8.6
-
-Source: https://raw.githubusercontent.com/tcltk/tcl/core-8-6-branch/license.terms
+Source: https://raw.githubusercontent.com/tcltk/tcl/core-9-0-branch/license.terms
 
 This software is copyrighted by the Regents of the University of
 California, Sun Microsystems, Inc., Scriptics Corporation, ActiveState
@@ -1950,9 +1949,9 @@ permission to use and distribute the software in accordance with the
 terms specified in this license.
 
 
-## Tk 8.6
+## Tk 9.0
 
-Source: https://raw.githubusercontent.com/tcltk/tk/core-8-6-branch/license.terms
+Source: https://raw.githubusercontent.com/tcltk/tk/core-9-0-branch/license.terms
 
 This software is copyrighted by the Regents of the University of
 California, Sun Microsystems, Inc., Scriptics Corporation, ActiveState

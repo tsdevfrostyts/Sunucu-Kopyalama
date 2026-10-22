@@ -1,8 +1,8 @@
 # Sunucu Kopyalama
 
-Windows için açık kaynak, animasyonlu Discord sunucu yapısı kopyalama uygulaması.
+Windows için animasyonlu Discord sunucu yapısı kopyalama uygulaması.
 
-**[v1.0.0 EXE indir](https://github.com/tsdevfrostyts/Sunucu-Kopyalama/releases/download/v1.0.0/Sunucu-Kopyalama_v1.0.0.exe)** · [Tüm sürümler](https://github.com/tsdevfrostyts/Sunucu-Kopyalama/releases)
+**[v1.0.1 EXE indir](https://github.com/tsdevfrostyts/Sunucu-Kopyalama/releases/download/v1.0.1/Sunucu-Kopyalama_v1.0.1.exe)** · [Tüm sürümler](https://github.com/tsdevfrostyts/Sunucu-Kopyalama/releases)
 
 ## Gizlilik
 
@@ -35,4 +35,6 @@ Kullanıcı hesabı otomasyonu Discord kurallarına aykırı olabilir ve hesabı
 
 ## Lisans
 
-[MIT](LICENSE). CustomTkinter arayüzü/simgesi ve diğer bileşenlerin lisansları [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) dosyasındadır. Discord ile bağlantılı veya Discord tarafından onaylanmış bir ürün değildir.
+v1.0.1 ve sonraki yeni dağıtımlar [kapalı kaynak kullanım lisansına](LICENSE) tabidir. Uygulamayı ücretsiz indirip kullanabilirsiniz; uygulamanın mülkiyeti veya yeni kaynak kodu üzerinde hak devri yapılmaz. Önceden MIT lisansıyla yayımlanmış v1.0.0 kodu ve kopyaları için verilmiş haklar korunur; yeni lisans bunları geriye dönük kısıtlamaz.
+
+Bu depo yeni sürümlerin indirme ve lisans bilgileri içindir; yeni uygulama kaynak kodu yayımlanmaz. Önceden yayımlanmış Git geçmişi ve v1.0.0 etiketi korunur. CustomTkinter arayüzü/simgesi ve diğer bileşenler kendi lisanslarına tabidir; metinleri [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) dosyasındadır. Discord ile bağlantılı veya Discord tarafından onaylanmış bir ürün değildir.
