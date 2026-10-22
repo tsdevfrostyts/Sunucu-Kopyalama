@@ -33,26 +33,6 @@ Yapı yedekleri `%LOCALAPPDATA%\SunucuKopyalayici\backups` altında tutulur; ara
 
 Kullanıcı hesabı otomasyonu Discord kurallarına aykırı olabilir ve hesabınızın kısıtlanmasına yol açabilir. Yalnızca kendi hesabınızla ve yönetmeye yetkili olduğunuz sunucularda kullanın. Token’inizi kimseyle paylaşmayın.
 
-## Kaynaktan çalıştırma ve EXE oluşturma
-
-Windows, Python 3.14 ve PowerShell ile:
-
-```powershell
-.\build.ps1
-```
-
-Bu komut sanal ortamı/bağımlılıkları hazırlar, testleri çalıştırır, `dist/Sunucu-Kopyalama_v1.0.0.exe` üretir ve paketlenmiş arayüzün öz denetimini çalıştırır. Derleme bağımlılıklarının kurulumu paket kayıt sistemlerine bağlanır; bu, son kullanıcının EXE çalışma akışından ayrıdır.
-
-Kaynaktan açmak için:
-
-```powershell
-.\.venv\Scripts\python.exe app.py
-```
-
-## Doğrulama
-
-v1.0.0 için 43 otomatik test (31 çekirdek/aktarım, 12 arayüz) ve üretilen EXE’nin arayüz öz denetimi geçti. Ağ testleri taklit yanıtlarla çalışır. Önceki çalışan çekirdeğin gerçek kopyalama işlemini kullanıcı doğruladı; bu sürümdeki görsel değişiklikler sonrasında tüm canlı Discord senaryoları ayrıca denenmedi. EXE dijital olarak imzalanmamıştır.
-
 ## Lisans
 
 [MIT](LICENSE). CustomTkinter arayüzü/simgesi ve diğer bileşenlerin lisansları [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) dosyasındadır. Discord ile bağlantılı veya Discord tarafından onaylanmış bir ürün değildir.
